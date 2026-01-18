@@ -207,9 +207,9 @@ h2 {
   filter: grayscale(0%);
 }
 
-/* suggestion */
+/* message */
 
-.all_suggestion {
+.all_message {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -217,7 +217,7 @@ h2 {
   padding: 20px;
 }
 
-.suggestion {
+.message {
   font-style: italic;
   text-align: left;
   width: 21.875rem;
@@ -231,13 +231,13 @@ h2 {
   height: auto;
 }
 
-.suggestion span {
+.message span {
   color: #7600bc;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.suggestion strong {
+.message strong {
   color: #333;
   font-size: 16px;
   font-style: normal;
@@ -315,7 +315,7 @@ h2 {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* suggestion Form */
+/* message Form */
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

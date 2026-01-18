@@ -1,4 +1,4 @@
-document.getElementById("suggestionForm").addEventListener("submit", async function(event) {
+document.getElementById("messageForm").addEventListener("submit", async function(event) {
     event.preventDefault();
 
     let form = event.target;
@@ -13,8 +13,7 @@ document.getElementById("suggestionForm").addEventListener("submit", async funct
         });
 
         if (response.ok) {
-            // ✅ Show your custom popup message (No Formspree redirect)
-            popupMessage.textContent = "✅ Thanks for your suggestion!";
+            popupMessage.textContent = "✅ Thanks for your message!";
             showPopup(true);
             form.reset();
         } else {

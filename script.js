@@ -1,5 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const curtain = document.getElementById("intro-curtain");
+    const enterBtn = document.getElementById("enter-site");
+    const enterText = document.querySelector(".enter-text");
+
+    const startSite = () => {
+        curtain.classList.add("lift-curtain");
+        setTimeout(() => {
+            curtain.style.display = "none";
+        }, 800);
+    };
+
+    if (enterBtn) enterBtn.addEventListener("click", startSite);
+    if (enterText) enterText.addEventListener("click", startSite);
+});
+
 document.getElementById("messageForm").addEventListener("submit", async function(event) {
-    event.preventDefault();
+        event.preventDefault();
 
     let form = event.target;
     let formData = new FormData(form);

@@ -6,6 +6,65 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#intro-curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+#enter-site {
+  width: auto;            
+  max-width: 350px;       
+  height: auto;           
+  border-radius: 10px;    
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#enter-site:hover {
+  transform: scale(1.03);
+}
+
+.enter-text {
+  color: #7600bc;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin-top: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.lift-curtain {
+  transform: translateY(-100%);
+}
+
+.skill {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(118, 0, 188, 0.3);
+}
+
+.project-card {
+  transition: transform 0.3s ease, background-color 0.3s;
+  border-radius: 8px;
+}
+.project-card:hover {
+  transform: translateX(15px);
+  background-color: #f9f5ff;
+}
+
 /* Navigation Bar */
 
 #home {

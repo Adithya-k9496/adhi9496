@@ -18,12 +18,12 @@ Visit my live portfolio here:
 - ✅ Skills section with icons and experience levels
 - ✅ Project cards with highlights
 - ✅ Social media icons with hover animation
-- ✅ Recommendation form with popup confirmation
+- ✅ messages form with popup confirmation
 - ✅ Scroll-to-top button
 - ✅ GitHub Pages deployment
 - ✅ Clean UI with subtle shadows and hover effects
-- ✅ All the recommendation will be send to the author of this github
-
+- ✅ All the messages will be send to the author of this github
+- ✅ Every segment of the code is equiped with corresponding comment for easier identification
 ---
 
 ## 🗂 Folder Structure

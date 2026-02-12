@@ -15,6 +15,28 @@ document.addEventListener("DOMContentLoaded", () => {
     if (enterBtn) enterBtn.addEventListener("click", startSite);
     if (enterText) enterText.addEventListener("click", startSite);
 
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        if (darkModeToggle) darkModeToggle.textContent = "☀️ Light Mode";
+    }
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+                darkModeToggle.textContent = "☀️ Light Mode";
+            } else {
+                localStorage.setItem("theme", "light");
+                darkModeToggle.textContent = "🌙 Dark Mode";
+            }
+        });
+    }
+
     const messageForm = document.getElementById("messageForm");
 
     if (messageForm) {
@@ -23,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let nameInput = document.getElementById("messenger_name");
             let emailInput = document.getElementById("messenger_email");
-            let messageInput = document.getElementById("new_message");
             let popupMessage = document.querySelector("#popup h3");
 
             if (!nameInput.value.trim() || !emailInput.value.trim()) {
@@ -55,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-});
+}); 
 
 function showPopup(bool) {
     const popup = document.getElementById("popup");

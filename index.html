@@ -10,7 +10,6 @@
       }
     </style>
   </head>
-  <body>
 <body>
     <div id="intro-curtain">
       <img src="html_finalprojimages/profile_image.webp" id="enter-site" alt="Click to Enter" />
@@ -39,7 +38,6 @@
       </div>
     </nav>
 
-    <!-- About Me -->
     <section id="about-me" class="container">
       <div>
         <img class="profile_image" src="html_finalprojimages/profile_image.webp" alt="Profile photo of Adithya K" />
@@ -160,8 +158,8 @@
         <fieldset>
           <legend class="introduction">Leave a message</legend>
           <form id="messageForm" action="https://formspree.io/f/xqallzkl" method="POST">
-            <input type="text" id="messenger_name" name="name" placeholder="Name" /><br />
-            <input type="email" name="email" placeholder="Your Email" /><br />
+            <input type="text" id="messenger_name" name="name" placeholder="Name" required /><br />
+            <input type="email" id="messenger_email" name="email" placeholder="Your Email" required /><br />
             <textarea id="new_message" name="message" placeholder="Your message" required></textarea><br />
             <div class="flex_center">
               <button type="submit">Send message</button>

@@ -410,3 +410,13 @@ button:hover {
   color: #fff;
   cursor: pointer;
 }
+
+input:required:invalid, 
+textarea:required:invalid {
+  border: 1px solid #d99eea;
+}
+
+input:required:valid, 
+textarea:required:valid {
+  border: 1px solid #7600bc; 
+}

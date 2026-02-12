@@ -25,6 +25,7 @@ Visit my live portfolio here:
 - ✅ All the messages will be send to the author of this github
 - ✅ Every segment of the code is equiped with corresponding comment for easier identification
 - ✅ message can only after filling out the name and email section
+- ✅ dark/light mode included
 ---
 
 ## 🗂 Folder Structure

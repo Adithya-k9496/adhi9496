@@ -420,3 +420,60 @@ input:required:valid,
 textarea:required:valid {
   border: 1px solid #7600bc; 
 }
+
+.dark-mode-btn {
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    width: auto !important;
+    padding: 8px 15px !important;
+    margin: 5px 10px !important;
+    font-size: 14px !important;
+    display: inline-block !important; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode #intro-curtain {
+    background-color: #121212;
+}
+
+body.dark-mode .profile_name {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .skill, 
+body.dark-mode .project-card, 
+body.dark-mode .message {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+body.dark-mode h2, 
+body.dark-mode #about-me h1 {
+    color: #bb86fc; 
+}
+
+body.dark-mode #about-me p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .project-card:hover {
+    background-color: #252525;
+}
+
+body.dark-mode fieldset {
+    border: thin solid #333;
+}

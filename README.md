@@ -1,6 +1,6 @@
 # 🌐 Adithya K – Developer Portfolio Website
 
-Welcome to my personal **developer portfolio** website — a fully responsive, single-page site built with **HTML5**, **CSS3**, and **Vanilla JavaScript**. It showcases my professional skills, personal projects, and allows users to leave recommendations that are **stored locally in the browser** using `localStorage`.
+Welcome to my personal **developer portfolio** website — a fully responsive, single-page site built with **HTML5**, **CSS3**, and **Vanilla JavaScript**. It showcases my professional skills, personal projects, and allows users to leave recommendations that are **stored locally in the browser** using `localStorage`. complete user friendly and communication capabalities. with the help of the formspree free website the , viewer are more than welcome share their thought and messag to the author. all the socails will be available in the website 
 
 ---
 

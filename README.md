@@ -9,7 +9,7 @@ official website of formspree: https://formspree.io/
 ## 🔗 Live Site  
 
 Visit my live portfolio here:  
-👉  [Click here to view my portfolio](https://adithya-k9496.github.io/adhi9496/)
+👉  [portfolio website](https://adithya-k9496.github.io/adhi9496/)
 
 ---
 

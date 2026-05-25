@@ -1,6 +1,7 @@
 # 🌐 Adithya K – Developer Portfolio Website
 
-Welcome to my personal **developer portfolio** website — a fully responsive, single-page site built with **HTML5**, **CSS3**, and **Vanilla JavaScript**. It showcases my professional skills, personal projects, and allows users to leave recommendations that are **stored locally in the browser** using `localStorage`. complete user friendly and communication capabalities. with the help of the formspree free website the , viewer are more than welcome share their thought and messag to the author. all the socials will be available in the website. the message uploaded will received via email directly toward  the auhtor.
+Welcome to my personal **developer portfolio** website — a fully responsive, single-page site built with **HTML5**, **CSS3**, and **Vanilla JavaScript**. It showcases my professional skills, personal projects, and allows users to leave recommendations that are **stored locally in the browser** using `localStorage`. complete user friendly and communication capabalities. with the help of the formspree free website the , viewer are more than welcome share their thought and messag to the author. all the socials will be available in the website. the message uploaded will received via email directly toward  the auhtor. all kinds of suggestions, updatation request is 
+accepted. the core updatation is all based of the suggestion provided will be review and excuteted according to the suggestion.
 
 official website of formspree: https://formspree.io/
 

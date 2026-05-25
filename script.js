@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 if (response.ok) {
-                    popupMessage.textContent = "✅ Thanks for your message!";
+                    popupMessage.textContent = "✅ Thank you!";
                     showPopup(true);
                     messageForm.reset();
                 } else {

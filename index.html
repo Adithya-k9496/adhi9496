@@ -1,192 +1,541 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Adithya.k - Portfolio</title> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Adithya K - Full Stack Developer with experience in web applications and microservices." />
+    <title>Adithya K - Portfolio</title> 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" /> 
     <script src="./script.js" defer></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
   </head>
-<body>
+<body id="home-top">
+    <!-- Intro Curtain -->
     <div id="intro-curtain">
-      <img src="html_finalprojimages/profile_image.webp" id="enter-site" alt="Click to Enter" />
-      <p class="enter-text">CLICK TO ENTER</p>
+      <div class="curtain-content">
+        <img src="html_finalprojimages/profile_image.webp" id="enter-site" alt="Profile avatar - Click to Enter" />
+        <p class="enter-text">CLICK TO ENTER</p>
+      </div>
     </div>
 
-    <nav>
-      <div id="home">
+    <!-- Navigation Bar -->
+    <header class="header">
+      <div class="nav-container">
         <div class="profile_name">
-          Adithya K
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="email icon" />
-            adithyaappu6305@gmail.com
-          </div>
-          <div class="contact_info">
-            <img src="html_finalprojimages/phone.png" alt="phone icon" />
-            +13456764598
+          <span class="name-title"><span class="logo-code">&lt;/&gt;</span> Adithya K</span>
+          <div class="contact-details">
+            <div class="contact_info">
+              <img src="html_finalprojimages/envelope.png" alt="email icon" />
+              <span>adithyaappu6305@gmail.com</span>
+            </div>
+            <div class="contact_info">
+              <img src="html_finalprojimages/phone.png" alt="phone icon" />
+              <span>+13456764598</span>
+            </div>
           </div>
         </div>
-        <div class="topdiv">
-        <button id="dark-mode-toggle" class="dark-mode-btn">🌙 Dark Mode</button>
+        <nav class="nav-menu">
+          <button id="dark-mode-toggle" class="dark-mode-btn">🌙 Dark Mode</button>
           <a class="topmenu" href="#about-me">About Me</a>
           <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#certificates">Certifications</a>
           <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#message">message</a>
+          <a class="topmenu" href="#contact">Message</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-section container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img class="profile_image" src="html_finalprojimages/profile_image.webp" alt="Profile photo of Adithya K" />
         </div>
-      </div>
-    </nav>
-
-    <section id="about-me" class="container">
-      <div>
-        <img class="profile_image" src="html_finalprojimages/profile_image.webp" alt="Profile photo of Adithya K" />
-      </div>
-
-      <div>
-        <h1>
-          Hi, I'm Adithya K!
-          <img src="html_finalprojimages/waving-hand.png" width="50px" />
-        </h1>
-        <p>
-          I am a full stack developer with 2 years of experience in both
-          application and presentation layers. I have worked on applications and
-          microservices deployed on cloud platforms. I enjoy building secure and
-          interactive web apps using technologies like HTML, CSS, JS, React and
-          Node.js.
-        </p>
+        <div class="about-text-content">
+          <h1>
+            Hi, I'm Adithya K!
+            <img class="waving-hand" src="html_finalprojimages/waving-hand.png" alt="Waving Hand" />
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both
+            application and presentation layers. I have worked on applications and
+            microservices deployed on cloud platforms. I enjoy building secure and
+            interactive web apps using technologies like HTML, CSS, JS, React and
+            Node.js.
+          </p>
+          <div class="about-cta-container">
+            <a href="adithya cv 2.pdf" class="cta-btn primary-cta" download>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="cta-btn secondary-cta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Get in Touch
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-title-wrapper">
+        <h2>Skills</h2>
+      </div>
       <div class="all_skills">
         <div class="skill">
-          <img src="html_finalprojimages/html5.png" />
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/html5.png" alt="HTML5 logo" />
+          </div>
           <h6>HTML</h6>
           <p>2 years experience</p>
         </div>
         <div class="skill">
-          <img src="html_finalprojimages/css3.png" />
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/CSS3.png" alt="CSS3 logo" />
+          </div>
           <h6>CSS</h6>
           <p>2 years experience</p>
         </div>
         <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" />
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/js.jpeg" alt="JavaScript logo" />
+          </div>
           <h6>JavaScript</h6>
           <p>1.5 years experience</p>
         </div>
         <div class="skill">
-          <img src="html_finalprojimages/react.png" />
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/react.png" alt="React logo" />
+          </div>
           <h6>React</h6>
           <p>1 year experience</p>
         </div>
         <div class="skill">
-          <img src="html_finalprojimages/node.png" />
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/node.png" alt="Node.js logo" />
+          </div>
           <h6>Node.js</h6>
           <p>1 year experience</p>
         </div>
         <div class="skill">
-          <img src="html_finalprojimages/java.png" />
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/java.png" alt="Java logo" />
+          </div>
           <h6>Java</h6>
           <p>0.5 years experience</p>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
+    <!-- Certifications Section -->
+    <section id="certificates" class="certificates-section">
+      <div class="section-title-wrapper">
+        <h2>Certifications</h2>
+      </div>
+            <div id="certs-grid" class="certificates-grid">
+        <!-- Card 1 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Communicating with impact</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=1" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Critical Soft Skills for Project Managers</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=2" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Edunet - SkillsBuild Orientation</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=3" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Artificial Intelligence in 5 Minutes</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=4" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>What is Artificial Intelligence?</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=5" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Artificial Intelligence in Practice</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=6" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Improve Your Resume Writing with Generative AI</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=7" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Mastering the Art of Prompting</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=8" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Enterprise Design Thinking Practitioner</h4>
+            <p class="cert-issuer">IBM SkillsBuild (IBM)</p>
+            <a href="combinepdf.pdf#page=9" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Edunet-TN: Machine Learning to Generative AI</h4>
+            <p class="cert-issuer">IBM SkillsBuild</p>
+            <a href="combinepdf.pdf#page=10" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 11 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Educational Prompt Engineering With TaLim AI</h4>
+            <p class="cert-issuer">TaLim AI Platform</p>
+            <a href="combinepdf.pdf#page=11" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>AI & Machine Learning Workshop</h4>
+            <p class="cert-issuer">Edunet Foundation & ASAP Kerala</p>
+            <a href="combinepdf.pdf#page=12" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 13 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>LibreOffice Suite Base Training</h4>
+            <p class="cert-issuer">IIT Bombay (Spoken Tutorial)</p>
+            <a href="combinepdf.pdf#page=13" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 14 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>R Programming Language Training</h4>
+            <p class="cert-issuer">IIT Bombay (Spoken Tutorial)</p>
+            <a href="combinepdf.pdf#page=14" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 15 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Python 3.4.3 Software Training</h4>
+            <p class="cert-issuer">IIT Bombay (Spoken Tutorial)</p>
+            <a href="combinepdf.pdf#page=15" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 16 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Introduction to Software Engineering</h4>
+            <p class="cert-issuer">IBM (via Coursera)</p>
+            <a href="combinepdf.pdf#page=16" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 17 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Introduction to Artificial Intelligence (AI)</h4>
+            <p class="cert-issuer">IBM (via Coursera)</p>
+            <a href="combinepdf.pdf#page=17" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 18 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Generative AI: Introduction & Applications</h4>
+            <p class="cert-issuer">IBM (via Coursera)</p>
+            <a href="combinepdf.pdf#page=18" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 19 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Generative AI: Prompt Engineering Basics</h4>
+            <p class="cert-issuer">IBM (via Coursera)</p>
+            <a href="combinepdf.pdf#page=19" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 20 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Introduction to HTML, CSS, & JavaScript</h4>
+            <p class="cert-issuer">IBM (via Coursera)</p>
+            <a href="combinepdf.pdf#page=20" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 21 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Python for Data Science, AI & Development</h4>
+            <p class="cert-issuer">IBM (via Coursera)</p>
+            <a href="combinepdf.pdf#page=21" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 22 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Data Visualization with Power BI</h4>
+            <p class="cert-issuer">ASAP Kerala & 360DigiTMG</p>
+            <a href="combinepdf.pdf#page=22" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 23 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Python Programming for Data Science</h4>
+            <p class="cert-issuer">ASAP Kerala & 360DigiTMG</p>
+            <a href="combinepdf.pdf#page=23" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 24 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Blender 3D Suite Training</h4>
+            <p class="cert-issuer">IIT Bombay Spoken Tutorial (EduPyramids)</p>
+            <a href="combinepdf.pdf#page=24" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 25 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>GIMP Image Editor Training</h4>
+            <p class="cert-issuer">IIT Bombay Spoken Tutorial (EduPyramids)</p>
+            <a href="combinepdf.pdf#page=25" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 26 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Career Orientation on AI (5-Day)</h4>
+            <p class="cert-issuer">Technovalley Software India</p>
+            <a href="combinepdf.pdf#page=26" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 27 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Certificate of Industry Visit</h4>
+            <p class="cert-issuer">ICT Academy of Kerala</p>
+            <a href="combinepdf.pdf#page=27" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <!-- Card 28 -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h4>Art of C Programming</h4>
+            <p class="cert-issuer">University of Calicut (SWAYAM)</p>
+            <a href="combinepdf.pdf#page=28" class="cert-link" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex_center show-more-wrapper">
+        <button id="show-more-certs-btn" class="show-more-btn">Show All Certifications (+22)</button>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-title-wrapper">
+        <h2>Projects</h2>
+      </div>
       <div id="projects-container" class="projects-container">
         <div class="project-card">
-          <h3>Chatbot</h3>
-          <ul>
-            <li>
-              Developed a secure website integrated with chatbot for an
-              automobile client using HTML, CSS, JavaScript and IBM Watson
-              Assistant
-            </li>
-          </ul>
+          <div class="project-header">
+            <h3>Chatbot</h3>
+          </div>
+          <p class="project-desc">
+            Developed a secure website integrated with chatbot for an
+            automobile client using HTML, CSS, JavaScript and IBM Watson
+            Assistant.
+          </p>
         </div>
-        <hr />
         <div class="project-card">
-          <h3>Sentiment Analyzer</h3>
-          <ul>
-            <li>
-              Developed and deployed a sentiment analyzer for the box reviews
-              section of an eCommerce platform using IBM NLU
-            </li>
-          </ul>
+          <div class="project-header">
+            <h3>Sentiment Analyzer</h3>
+          </div>
+          <p class="project-desc">
+            Developed and deployed a sentiment analyzer for the reviews
+            section of an eCommerce platform using IBM NLU.
+          </p>
         </div>
-        <hr />
         <div class="project-card">
-          <h3>Fashion Website</h3>
-          <ul>
-            <li>
-              Created a styled multi-page website for a new player in the
-              fashion industry and integrated it with a shopping cart, using
-              Stripe for payment gateway
-            </li>
-          </ul>
+          <div class="project-header">
+            <h3>Fashion Website</h3>
+          </div>
+          <p class="project-desc">
+            Created a styled multi-page website for a new player in the
+            fashion industry and integrated it with a shopping cart, using
+            Stripe for payment gateway.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Social Media Section -->
-    <section id="social-media" class="flex_center">
-      <a href="https://www.instagram.com/motoholic_adhi_?igsh=MXA0NjNjbHR5dXN0dw==" target="_blank" class="social-icon">
-        <img src="html_finalprojimages/instagram.png" alt="Instagram" width="40px" />
+    <section id="social-media" class="social-section flex_center">
+      <a href="https://www.instagram.com/motoholic_adhi_?igsh=MXA0NjNjbHR5dXN0dw==" target="_blank" class="social-icon" aria-label="Instagram">
+        <img src="html_finalprojimages/instagram.png" alt="Instagram" />
       </a>
-      <a href="https://www.linkedin.com/in/adithya-k-6589ba322" target="_blank" class="social-icon">
-        <img src="html_finalprojimages/linkedin.png" alt="LinkedIn" width="40px" />
+      <a href="https://www.linkedin.com/in/adithya-k-6589ba322" target="_blank" class="social-icon" aria-label="LinkedIn">
+        <img src="html_finalprojimages/linkedin.png" alt="LinkedIn" />
       </a>
     </section>
 
-    <!-- message -->
-    <section id="message">
-      <h2>message</h2>
-      <h5><u><i><b>Kindly provide your message to improve this portfolio</b></i></u></h5>
-      <div class="all_message" id="all_message">
-        <!-- JavaScript will populate suggestions here -->
-      </div>
-    </section>
-
-    <!-- message Form -->
-    <section id="contact">
+    <!-- Message Form Section -->
+    <section id="contact" class="contact-section">
       <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">submit your message</legend>
-          <form id="messageForm" action="https://formspree.io/f/mjgzepld" method="POST">
-            <input type="text" id="messenger_name" name="name" placeholder="Name" required /><br />
-            <input type="email" id="messenger_email" name="email" placeholder="Your Email" required /><br />
-            <textarea id="new_message" name="message" placeholder="Your message" required></textarea><br />
-            <div class="flex_center">
-              <button type="submit">submit messsage</button>
-            </div> 
+        <div class="contact-card">
+          <h3 class="contact-title">Leave a Message</h3>
+          <form id="messageForm" action="https://formspree.io/f/mjgzepld" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="messenger_name" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="messenger_email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea id="new_message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
           </form>
-        </fieldset>
+        </div>
       </div>
     </section>
 
     <!-- Scroll to Top Button -->
     <div class="iconbutton">
-      <a href="#home">
+      <a href="#home-top" aria-label="Scroll to top">
         <img
           src="html_finalprojimages/home.png"
           alt="Home Icon"
-          width="40px"
         />
       </a>
     </div>
 
-    <!-- Popup -->
-    <div class="popup" id="popup">
+    <!-- Success/Failure Popup -->
+    <div class="popup" id="popup" role="dialog" aria-modal="true">
       <div class="popup-content">
-        <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark" />
-        <h3>thank you!</h3>
-        <button onclick="showPopup(false)">Ok</button>
+        <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark icon" />
+        <h3>Thank you!</h3>
+        <button class="popup-btn" onclick="showPopup(false)">Ok</button>
       </div>
     </div>
   </body>
